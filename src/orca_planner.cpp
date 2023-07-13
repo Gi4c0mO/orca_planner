@@ -114,7 +114,7 @@ namespace orca_planner
     {
         // subscribe to the robot's odometry topic
         //sub_odom = nh.subscribe<nav_msgs::Odometry>("/mobile_base/odom", 1, &odom_callback);
-        sub_odom = nh.subscribe<nav_msgs::Odometry>("/locobot/odom", 1, &odom_callback);
+        sub_odom = nh.subscribe<nav_msgs::Odometry>("/mobile_base/odom", 1, &odom_callback);
         /*
             std::cout << "\n";
             std::cout << "**Odometry received: " << std::endl;
